@@ -39,4 +39,5 @@ Notice about this example:
 n=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is:'.format(n))
 
-print(s.lower)
+l=list(string.ascii_lowercase)
+n.count(l)
