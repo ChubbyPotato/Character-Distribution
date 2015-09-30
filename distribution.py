@@ -41,8 +41,8 @@ import string
 n=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is:'.format(n))
 
-b=n.lowercase()
+lc=n.lower()
 
 l=str(list(string.ascii_lowercase))
-print(l)
-print(b.count(l))
+a=str(lc.count(l))
+
