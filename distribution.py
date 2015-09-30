@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Suhan Gui
-Credit: 
+Credit: http://stackoverflow.com/questions/2587402/sorting-python-list-based-on-the-length-of-the-string
 
 Assignment: Character Distribution
 
@@ -46,3 +46,4 @@ lc=n.lower()
 l=str(list(string.ascii_lowercase))
 a=str(lc.count(l))
 
+for x in a:
