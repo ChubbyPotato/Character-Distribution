@@ -38,13 +38,38 @@ Notice about this example:
 """
 import string
 
-n=input("Please enter a string of text (the bigger the better): ")
+string=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is:'.format(n))
 
 lc=n.lower()
 
-l=str(list(string.ascii_lowercase))
-a=str(lc.count(l))
+#l=str(list(string.ascii_lowercase))
+potato=str(lc.count(l))
 
-for x in a:
-    x=n.count('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
+for x in potato:
+    a=string.count('a')
+    b=string.count('b')
+    c=string.count('c')
+    d=string.count('d')
+    e=string.count('e')
+    f=string.count('f')
+    g=string.count('g')
+    h=string.count('h')
+    i=string.count('i')
+    j=string.count('j')
+    k=string.count('a')
+    l=string.count('a')
+    m=string.count('a')
+    n=string.count('a')
+    o=string.count('a')
+    p=string.count('a')
+    q=string.count('a')
+    r=string.count('a')
+    s=string.count('a')
+    t=string.count('a')
+    u=string.count('a')
+    v=string.count('a')
+    w=string.count('a')
+    x=string.count('a')
+    y=n.count('a')
+    z=n.count('a')
