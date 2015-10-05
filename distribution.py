@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Suhan Gui
-Credit: http://stackoverflow.com/questions/2587402/sorting-python-list-based-on-the-length-of-the-string
+Credit: Stack Overflow
 
 Assignment: Character Distribution
 
