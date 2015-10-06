@@ -41,35 +41,12 @@ import string
 string=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is:'.format(n))
 
-lc=n.lower()
+from collections import Counter
+import string
 
-#l=str(list(string.ascii_lowercase))
-potato=str(lc.count(l))
+def count_letters(word, valid_letters=string.ascii_letters):
+    count = Counter(word) # this counts all the letters, including invalid ones
+    return sum(count[letter] for letter in valid_letters) # add up valid letters
 
-for x in potato:
-    a=string.count('a')
-    b=string.count('b')
-    c=string.count('c')
-    d=string.count('d')
-    e=string.count('e')
-    f=string.count('f')
-    g=string.count('g')
-    h=string.count('h')
-    i=string.count('i')
-    j=string.count('j')
-    k=string.count('k')
-    l=string.count('l')
-    m=string.count('m')
-    n=string.count('n')
-    o=string.count('o')
-    p=string.count('p')
-    q=string.count('q')
-    r=string.count('a')
-    s=string.count('a')
-    t=string.count('a')
-    u=string.count('a')
-    v=string.count('a')
-    w=string.count('a')
-    x=string.count('a')
-    y=string.count('a')
-    z=string.count('a')
+word = "The grey old fox is an idiot"
+print(count_letters(word))
