@@ -46,5 +46,5 @@ def count_letters(word, valid_letters=string.ascii_letters):
     count = Counter(word) # this counts all the letters, including invalid ones
     return sum(count[letter] for letter in valid_letters) # add up valid letters
 
-word = "The grey old fox is an idiot"
+word = string
 print(count_letters(word))
