@@ -38,12 +38,12 @@ Notice about this example:
 """
 from collections import Counter
 import string
-
-def count_letters(word, valid_letters=string.ascii_letters):
-    count = Counter(word) # this counts all the letters, including invalid ones
-    return sum(count[letter] for letter in valid_letters) # add up valid letters
-
+import operator
 
 word=input("Please enter a string of text (the bigger the better): ")
+potato=word.lower()
 print('The distribution of characters in "{0}" is:'.format(word))
-print(count_letters(word))
+
+doge=dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato))
+sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
+print(sorted_doge)
