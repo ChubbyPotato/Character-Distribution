@@ -39,12 +39,11 @@ Notice about this example:
 from collections import Counter
 import string
 
-string=input("Please enter a string of text (the bigger the better): ")
-print('The distribution of characters in "{0}" is:'.format(n))
-
 def count_letters(word, valid_letters=string.ascii_letters):
     count = Counter(word) # this counts all the letters, including invalid ones
     return sum(count[letter] for letter in valid_letters) # add up valid letters
 
-word = string
+
+word=input("Please enter a string of text (the bigger the better): ")
+print('The distribution of characters in "{0}" is:'.format(word))
 print(count_letters(word))
