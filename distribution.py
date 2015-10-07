@@ -28,16 +28,16 @@ r
          ( \    /)
         d( 0    o)b
          (   *   )
-         (>-----<)        __    
+         (>----->)        __    
          [.......]       /
-    /---<{         }>---/
-   /      [         ]
-__/     [         ]
-     (    .    )
-     [---------]
-     [---------]
-     / /     \ \
-____/ /       \ \____
+    /---<{ ------ }>---/
+   /      [--------]
+__/     [---------]
+       (    .    )
+       [---------]
+       [---------]
+       / /     \ \
+  ____/ /       \ \____
 Notice about this example:
 
 * The text: 'The rain ... plain' is provided by the user as input to your program.
@@ -57,7 +57,7 @@ word=input("Please enter a string of text (the bigger the better): ")
 potato=word.lower()
 print('The distribution of characters in "{0}" is:'.format(word))
 
-doge=list(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato))
+doge=dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
 
 print(sorted_doge)
