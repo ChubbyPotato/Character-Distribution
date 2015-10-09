@@ -39,19 +39,16 @@ Notice about this example:
 from collections import Counter
 import string
 import operator
-import re
 
 word=input("Please enter a string of text (the bigger the better): ")
 potato=word.lower()
-tomato=re.sub(potato)
 print('The distribution of characters in "{0}" is:'.format(word))
 
-doge=(dict(map(lambda letter:(letter,len(tomato)-len(tomato.replace(letter,''))),tomato)))
+doge=(dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato)))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
 converted_doge = dict.items(doge)
 #ordered_doge = converted_doge.sort()
 
-
 for x in converted_doge:
-    if x[0]!=0:
+    if x[0]!=0 and x[0]!=('>'):
         print(x[0]*x[1])
