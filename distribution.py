@@ -39,6 +39,7 @@ Notice about this example:
 from collections import Counter
 import string
 import operator
+import re
 
 word=input("Please enter a string of text (the bigger the better): ")
 potato=word.lower()
@@ -48,7 +49,8 @@ doge=(dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,'')))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
 converted_doge = dict.items(doge)
 #ordered_doge = converted_doge.sort()
+#poo=string.isalpha(doge)
 
-for x in converted_doge:
-    if x[0]!=0 and x[0]!=('>'):
+for x in sorted_doge:
+    if x[0]!=0 and string.sorted_doge():
         print(x[0]*x[1])
