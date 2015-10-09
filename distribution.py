@@ -10,7 +10,7 @@ the distribution of characters in a given sample of text.
 
 Output of your program should look like this:
 
-Please enter a string of text (the bigger the better): The rain in Spain stays mainly in the plain.
+Please enter a string of text (the bigger the better):The rain in Spain stays mainly in the plain.
 The distribution of characters in "The rain in Spain stays mainly in the plain." is:
 iiiiii
 nnnnnn
@@ -46,8 +46,9 @@ print('The distribution of characters in "{0}" is:'.format(word))
 
 doge=(dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato)))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
-converted_doge = 
+converted_doge = dict.items(doge)
+ordered_doge = converted_doge.sort()
 
-for x in sorteddoge:
+for x in converted_doge:
     if x[0]!=0:
         print(x[0]*x[1])
