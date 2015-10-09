@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Suhan Gui
-Credit: Stack Overflow
+Credit: Stack Overflow & Nils Kingston
 
 Assignment: Character Distribution
 
@@ -45,6 +45,8 @@ potato=word.lower()
 print('The distribution of characters in "{0}" is:'.format(word))
 
 doge=dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato))
-sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
+sorted_doge = sorted(doge.items(), key=lambda.itemgetter(0)))))
 
-print(sorted_doge)
+for x in sorted_doge:
+    if x[0]!=0:
+        print(x[0]*x[1])
