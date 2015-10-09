@@ -45,7 +45,7 @@ potato=word.lower()
 print('The distribution of characters in "{0}" is:'.format(word))
 
 doge=dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato))
-sorted_doge = sorted(doge.items(), key=lambda.itemgetter(0)))))
+sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
 
 for x in sorted_doge:
     if x[0]!=0:
