@@ -24,20 +24,7 @@ pp
 yy
 m
 r
-          VVVVVVV
-         ( \    /)
-        d( 0    o)b
-         (   *   )
-         (>----->)        __    
-         [.......]       /
-    /---<{ ------ }>---/
-   /      [--------]
-__/     [---------]
-       (    .    )
-       [---------]
-       [---------]
-       / /     \ \
-  ____/ /       \ \____
+
 Notice about this example:
 
 * The text: 'The rain ... plain' is provided by the user as input to your program.
