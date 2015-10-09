@@ -44,9 +44,10 @@ word=input("Please enter a string of text (the bigger the better): ")
 potato=word.lower()
 print('The distribution of characters in "{0}" is:'.format(word))
 
-doge=dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato))
+doge=(dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato)))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
+converted_doge = 
 
-for x in sorted_doge:
+for x in sorteddoge:
     if x[0]!=0:
         print(x[0]*x[1])
