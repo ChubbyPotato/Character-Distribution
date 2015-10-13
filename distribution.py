@@ -48,9 +48,9 @@ print('The distribution of characters in "{0}" is:'.format(word))
 doge=(dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,''))),potato)))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
 converted_doge = dict.items(doge)
-#ordered_doge = converted_doge.sort()
-#poo=string.isalpha(doge)
+the_list.sort()
+the_list.sort(key=len, reverse=True)
 
 for x in sorted_doge:
-    if x[0]!=0 and string.sorted_doge():
+    if x[0]!=0 and x!=(" "):
         print(x[0]*x[1])
