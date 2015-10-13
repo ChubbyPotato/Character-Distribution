@@ -48,12 +48,13 @@ doge=(dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,'')))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
 converted_doge = list(doge.items())
 print(converted_doge)
-#a=converted_doge.sort()
+a=converted_doge.sort()
 #b=converted_doge.sort(key=len, reverse=True)
 #c=converted_doge.sort(key=lambda item: (-len(item), item))
 print(converted_doge.sort())
 print(converted_doge.sort(key=len, reverse=True))
 print(converted_doge.sort(key=lambda item: (-len(item), item)))
+#print(a.sort(key=len, reverse=True))
 
 for x in sorted_doge:
     if x[0]!=0 and x[0]!=(" "):
