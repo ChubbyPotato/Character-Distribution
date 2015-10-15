@@ -50,5 +50,5 @@ converted_doge = list(doge.items())
 
 converted_doge.sort(key=lambda f: (-f[1], f[0]))
 for x in converted_doge:
-    if x[0]!=0 and x[0]!=(" "):
+    if x[0]!=0 and x[0]!=(" ") and x[0]!=("'") and x[0]!=("$") and x[0]!=("%") and x[0]!=("(") and x[0]!=(")") and x[0]!=(";") and x[0]!=(":") and x[0]!=("!") and x[0]!=(">") and x[0]!=("<") and x[0]!=(",") and x[0]!=("?") and x[0]!=('"') and x[0]!=("="):
         print(x[0]*x[1])
