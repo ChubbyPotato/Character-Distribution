@@ -48,10 +48,7 @@ doge=(dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,'')))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
 converted_doge = list(doge.items())
 
-converted_doge.sort(key=lambda f: (-f[0], f[1]))
-
-print(converted_doge)
-
+converted_doge.sort(key=lambda f: (-f[1], f[0]))
 for x in converted_doge:
     if x[0]!=0 and x[0]!=(" "):
         print(x[0]*x[1])
