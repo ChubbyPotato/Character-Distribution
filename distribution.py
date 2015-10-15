@@ -48,7 +48,7 @@ doge=(dict(map(lambda letter:(letter,len(potato)-len(potato.replace(letter,'')))
 sorted_doge = sorted(doge.items(), key=operator.itemgetter(0))
 converted_doge = list(doge.items())
 
-converted_doge.sort(key=lambda item: (len(item), item))
+converted_doge.sort(key=lambda f: (-f[0], f[1]))
 
 print(converted_doge)
 
